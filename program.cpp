@@ -19,6 +19,10 @@ int main() {
 	int wartosc;
 	cout << "Wprowadz liczbe: \n";
 	cin >> wartosc;
+	if(wartosc < 0) {
+		cout << "blad: liczba ujemna\n";
+		return 1;
+	}
 	cout << "Wczyana liczba to: " << wartosc << '\n';
 	cout << "Element Fibonacciego (" << wartosc << "): " << fib(wartosc) << '\n';
 	return 0;
